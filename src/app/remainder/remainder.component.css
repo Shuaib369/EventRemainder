@@ -1,0 +1,18 @@
+td
+{
+    padding:10px 15px;
+}
+.mainDiv{
+    background-color: aqua;
+    width: 50%;
+    position: relative;
+    left: 300px;
+    top:10px;
+}
+.headingEvent{
+    position: relative;
+    left: 300px;
+}
+.trheading{
+    background-color: aliceblue;
+}

@@ -1,0 +1,40 @@
+td
+{
+   
+    justify-content: space-between;
+}
+.mainDiv{
+    background-color:rgb(161, 94, 152);
+    /* width: 50%; */
+    /* position:absolute; */
+    /* left: 300px; */
+    /* top:10px; */
+}
+.headingEvent{
+    position: relative;
+    left: 300px;
+}
+.trheading{
+    background-color: blanchedalmond;
+    justify-content:space-evenly;
+}
+.deleteButton{
+    margin-top: 10px
+}
+.ediButton{
+    margin-top: 10px;
+    margin-left: 30px;
+    /* width: 65px; */
+}
+.btnUpdate{
+    margin-top: 27px;
+    height: 30px;
+    width: 60px;
+}
+#hee{
+    width: max-content;
+    position: relative;
+    left: 40%;
+    top: auto;
+
+}

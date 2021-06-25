@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Event Reminder</h1>
+            <h4>Welcome</h4>
+            <div class="col-4"></div>
+            <div class="col-4" id="col4">
+                <div class="main">
+                    <form>
+                        <input type="date" class="date" > <br><br>
+                        <input type="text" class="event" placeholder="Event Details"><br><br>
+                        <input type="submit" class="submit" id="Add Event">&nbsp; &nbsp;
+                        <button id="view">View Event</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<h3>Welcome {{user}}</h3>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> REMAINDER APP </h2>
+      
+  
+      <!-- Icon -->
+      
+  
+      <!-- Login Form -->
+      
+      <form>
+        <img class="notificationImg blink-image" src="/assets/images/notification.png" (click)="remainder()">
+          
+        <input type="submit" class="fadeIn fourth createbtn"  value="Create Event" (click)="create()">
+        <input type="button" class="fadeIn fourth"   value="show Event"(click)="show()" >
+      </form>
+  
+      
+     
+  
+    </div>
+  </div>

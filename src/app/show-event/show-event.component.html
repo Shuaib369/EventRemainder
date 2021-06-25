@@ -1,0 +1,95 @@
+<form>
+    <h2 class="headingEvent"><b>Event history</b></h2>
+    <div class="row mainDiv">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <table class="table">
+                <tr class="trheading">
+                    <td>Sl.no</td> &nbsp;
+                    <td>Event Date</td>&nbsp;
+                    <td>Event </td>
+
+                </tr>
+                <tbody>
+                    <tr *ngFor="let result of eventDet;let i=index;">
+
+                        <td>{{i+1}}</td> &nbsp;
+                        <td>{{result.eDate}}</td>&nbsp;
+
+                        <td>{{result.eDetails}}</td>
+                        <button class="deleteButton" (click)="deleteRow(result.eDetails)">Delete</button>
+                        <button class="ediButton" (click)="updateRow(i,result.eDate,result.eDetails)">Edit</button>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-4"></div>
+
+        <input type="submit" id="hee" class="fadeIn fourth" value="back" (click)="back()">
+    </div>
+</form>
+<form action="">
+    <div class="container main styless">
+    <div class="row mainDiv" id="editDiv" style="display: none;">
+        <div class="col-4"></div>
+        <div class="col-4">
+
+    <div class="mb-3">
+        <input type="hidden" name="txthidden" id="" [(ngModel)]="indexNum">
+    </div>
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Event Date</label>
+        <input type="date" name="txtdate" class="form-control" id="" [(ngModel)]="edetl">
+      </div>
+
+
+    <!-- <div class="mb-3">
+        <input type="date" name="txtdate" id="" [(ngModel)]="edate" class="form-control">
+    </div> -->
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Event Details</label>
+        <input type="text" name="txtEvent" class="form-control" id="" [(ngModel)]="edetl" placeholder="Details of the Event">
+      </div>
+
+    <!-- <div class="mb-3">
+        <input type="text" name="txtEvent" id="" [(ngModel)]="edetl" class="form-control">
+    </div> -->
+
+    <button  class="btn btn-primary sub" (click)="update(indexNum,edate,edetl)">update</button>
+</div>
+
+</div>
+    </div>
+</form>
+
+
+
+
+            <!-- <table class="table">
+                <tr class="trheading">
+
+
+                    <td>Date</td>
+                    <td>Event</td>
+
+                </tr>
+                <tbody>
+                    <tr>
+                        <input type="hidden" name="txthidden" id="" [(ngModel)]="indexNum">
+                        <td>
+                            <input type="date" name="txtdate" id="" [(ngModel)]="edate">
+                        </td>
+                        <td>
+                            <input type="text" name="txtEvent" id="" [(ngModel)]="edetl">
+                        </td>
+
+                        <td></td>
+                        <button class="btnUpdate" (click)="update(indexNum,edate,edetl)">update</button>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div> -->

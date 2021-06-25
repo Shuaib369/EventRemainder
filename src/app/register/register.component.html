@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Event Reminder</h1><br>
+           <marquee><h5>Account Creation</h5></marquee> 
+            <div class="col-4"></div>
+            <div class="col-4" id="col4">
+                <div class="main">
+                    <form>
+                        <input type="text" class="uname" placeholder="Enter Username"><br><br>
+                        <input type="password" class="pass" placeholder="Enter Password"><br><br>
+                        <input type="submit" class="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html> -->
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active">Create New Account  </h2>
+      
+  
+      <!-- Icon -->
+      
+  
+      <!-- Login Form -->
+      
+      <form (ngSubmit)="signUp()" [formGroup]="registerform">
+        <input type="text"  class="fadeIn second"  name="login" formControlName="uID"  placeholder="User ID">
+        <div class="errors" *ngIf=" (registerform.get('uID')?.touched || registerform.get('uID')?.dirty) && registerform.get('uID').errors "></div>
+        <input type="text"  class="fadeIn second"  name="login" formControlName="userName"  placeholder="User Name">
+       <div class="errors" *ngIf=" (registerform.get('userName')?.touched || registerform.get('userName')?.dirty) && registerform.get('userName')?.errors ">Invalid User Name</div>
+        <input type="text"  class="fadeIn third" name="login" formControlName="password"  placeholder="password">
+        <div class="errors" *ngIf=" (registerform.get('password')?.touched || registerform.get('password')?.dirty) && registerform.get('password')?.errors ">Invalid password</div>
+        <input type="submit" class="fadeIn fourth"   value="Sign Up">
+      </form>
+  
+      
+     
+  
+    </div>
+  </div>
